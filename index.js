@@ -607,9 +607,7 @@ function inject(bot) {
         resetPath("door", true);
         lastNodeTime = performance.now()
       } else if (nearDoors.length > 0 && doorCD === 0) {
-        bot.activateBlock(nearDoors.shift()).then(() => {
-          moveToBlock(nextPoint)
-        })
+        bot.activateBlock(nearDoors.shift())
         doorCD = 20
       } else if (doorCD > 0) {
         doorCD -= 1
