@@ -590,9 +590,6 @@ function inject(bot) {
         passingDoor = true;
         lastPlace = p;
       }
-
-
-      return
     }
 
     if (passingDoor) {

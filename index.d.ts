@@ -378,7 +378,7 @@ declare module 'mineflayer' {
 		path_reset: (
 			reason: 'goal_updated' | 'movements_updated' |
 				'block_updated' | 'chunk_loaded' | 'goal_moved' | 'dig_error' |
-				'no_scaffolding_blocks' | 'place_error' | 'stuck'
+				'no_scaffolding_blocks' | 'place_error' | 'stuck' | 'door'
 		) => void;
 		path_stop: () => void;
 	}
